@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2w-bx-qWH">
+                                <rect key="frame" x="272" y="392" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwH-he-Ztb">
+                                <rect key="frame" x="251" y="248" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCA-Mz-tbd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3v-Sv-LNB">
+                                <rect key="frame" x="254" y="421" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYE-dw-TRh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnU-6C-QGR">
+                                <rect key="frame" x="248" y="46" width="104" height="68"/>
+                                <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="60"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhQ-lR-oB6">
+                                <rect key="frame" x="266" y="220" width="69" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LhQ-lR-oB6" firstAttribute="centerX" secondItem="hnU-6C-QGR" secondAttribute="centerX" id="5Z3-VF-Izj"/>
+                            <constraint firstItem="LhQ-lR-oB6" firstAttribute="top" secondItem="hnU-6C-QGR" secondAttribute="bottom" constant="106" id="IyS-Zq-U9Y"/>
+                            <constraint firstItem="K2w-bx-qWH" firstAttribute="centerX" secondItem="hnU-6C-QGR" secondAttribute="centerX" id="PKm-dq-tNo"/>
+                            <constraint firstItem="y3v-Sv-LNB" firstAttribute="centerX" secondItem="hnU-6C-QGR" secondAttribute="centerX" id="XfF-2d-J5o"/>
+                            <constraint firstItem="K2w-bx-qWH" firstAttribute="top" secondItem="wwH-he-Ztb" secondAttribute="bottom" constant="114" id="aBe-7Y-cBB"/>
+                            <constraint firstItem="hnU-6C-QGR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWt-8H-gV4"/>
+                            <constraint firstItem="wwH-he-Ztb" firstAttribute="top" secondItem="LhQ-lR-oB6" secondAttribute="bottom" constant="8" id="cpO-V6-RbY"/>
+                            <constraint firstItem="hnU-6C-QGR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="rEn-Dg-9AJ"/>
+                            <constraint firstItem="y3v-Sv-LNB" firstAttribute="top" secondItem="K2w-bx-qWH" secondAttribute="bottom" constant="8" id="zaP-5C-s8h"/>
+                            <constraint firstItem="wwH-he-Ztb" firstAttribute="centerX" secondItem="hnU-6C-QGR" secondAttribute="centerX" id="zsa-lI-d9y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="K2w-bx-qWH" id="jhK-sM-dqm"/>
+                        <outlet property="questionLabel" destination="LhQ-lR-oB6" id="DJC-oe-FZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>
